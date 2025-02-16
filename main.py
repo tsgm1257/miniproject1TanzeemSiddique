@@ -13,7 +13,7 @@ mytickers.sort()
 for ticker in mytickers:
     dat = yf.Ticker(ticker)
     mydata[ticker] = {'ticker': ticker,
-                      'dailyHigh': dat.info["dayHigh"]
+                      'dayHigh': dat.info["dayHigh"]
                       }
     pprint.pprint(mydata)
 
