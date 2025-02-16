@@ -7,6 +7,9 @@ import yfinance as yf
 import numpy as np
 import matplotlib.pyplot as plt
 import copy
+import os
+
+os.makedirs("charts", exist_ok=True)
 
 mytickers = ["MSFT", "AAPL", "NVDA", "GME", "AMC"]
 
